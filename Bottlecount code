@@ -1,0 +1,35 @@
+#Amy Cardona
+#CIS129
+#Write a program that will allow a grocery store to keep track of the total number of bottles collected 
+# for seven days.
+#The program will calculate the total number of bottles returned for the week and the amount paid out 
+# (the total returned times .10 cents). 
+#The output of the program should include the total number of bottles returned and the total paid out.  
+#The program will ask the user if they have more data to enter and will end the program if they do not. 
+
+#total_bottles = 0
+#todays_bottles = 0
+#total_payout = 0
+#counter = 0
+
+keepGoing = 'y'
+while keepGoing == 'y':
+    input("Do you want to enter another week's worth of data?\n(Enter: y or n)? ")
+
+    nmbr_of_days = 7
+    totalBottles = 0
+    todaysBottles = 0
+    counter = 0
+    while counter < nmbr_of_days:
+        todaysBottles = input("Enter number of bottles returned for day #",counter, ":")
+        totalBottles = todaysBottles + totalBottles
+        counter =  counter + 1 or += 1
+    #totalPayout = 0 // resets to 0 for multiple runs
+    #total_payout = totalbottles * payout_per_botttle	
+    payoutPerBottle = 0.10
+    totalPayout = totalBottles * payoutPerBottle
+    #The total number of bottles collected is 2475
+    #The total paid out is $ 247.5
+    print('The total number of bottles collected is', totalBottles)
+
+    print('The total paid out is $', '{:.1f}', str(totalPayout))
